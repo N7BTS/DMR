@@ -1,7 +1,7 @@
 ## WECG DMR Codeplug for Anytone D-878UV
 Modified from [@AG7GN](https://www.github.com/AG7GN)'s D-868UV codeplug for use with the D-878 and added analog and digital APRS functionality. Codeplug contains the PNW repeater network frequencies/zones along with other various Brandmeister repeaters in Northwest Washington and the WECG frequency list for Whatcom County. 
 
-This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.13. It can be downloaded from [Bridgecomm Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). It may not be compatible with the D-868UV radio or the D-868UV CPS. 
+This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.13. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). It may not be compatible with the D-868UV radio or the D-868UV CPS. 
 
 ## Changes from AG7GN D-868 Codeplug
 * Imported and saved with D-878 CPS
@@ -12,6 +12,9 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 * Added zone/channels for Analog APRS, with 14 frequently used local Whatcom repeaters plus VHF Calling Freq
 * Added zone/channels for Digital APRS, with WASH EMCOMM, WASH 1, WASH TAC, and Local 2, all through NC7Q Ferndale repeater
 * Added analog APRS functionality through the menus
+
+## Known Issues
+* Some newer radios get a "Band Error" when trying to write this codeplug to the radio. Bridgecom has created a [video](https://www.youtube.com/watch?v=yj-AoN1ofGc) explaning this error and how to fix it. More information about the error is on their [878 Support Page](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page).
 
 ## I just got a new Anytone D-878 radio... now what?
 * **Important:** Obtain a DMR ID by registering on [Radioid.net](https://radioid.net/register). You may do this before you get the radio.
