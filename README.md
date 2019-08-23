@@ -4,6 +4,10 @@ Modified from [@AG7GN](https://www.github.com/AG7GN)'s D-868UV codeplug for use 
 This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.13. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). It should be compatible with the D-868UV radio and the D-868UV CPS, except for the APRS features. 
 
 # Change log
+### 8-23-19
+* Updated digital contact list
+* Pointed Lookout U and V (B'ham) Parrot channels to the correct TG
+* Changed template DMR ID to a default 13153958
 ### 7-31-19 (Changes from AG7GN D-868 Codeplug)
 * Imported and saved with D-878 CPS
 * Updated Digital Contact List
@@ -13,10 +17,6 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 * Added zone/channels for Analog APRS, with 14 frequently used local Whatcom repeaters plus VHF Calling Freq
 * Added zone/channels for Digital APRS, with WASH EMCOMM, WASH 1, WASH TAC, and Local 2, all through NC7Q Ferndale repeater
 * Added analog APRS functionality through the menus
-### 8-23-19
-* Updated digital contact list
-* Pointed Lookout U and V (B'ham) Parrot channels to the correct TG
-* Changed template DMR ID to a default 13153958
 
 # Known Issues
 * Some newer radios get a "Band Error" when trying to write this codeplug to the radio. Bridgecom has created a [video](https://www.youtube.com/watch?v=yj-AoN1ofGc) explaning this error and how to fix it. More information about the error is on their [878 Support Page](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page).
