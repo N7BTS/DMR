@@ -46,3 +46,14 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 * Upload to radio. In the menu bar, click **Program -> Write to radio**. Click **Ok** and then check both boxes **Digital Contact List** and **Other Data**. Click **Ok** and wait for the data to be written to the radio. Don't turn off or unplug the radio during this step. It may take several minutes, as the digital contact list contains tens of thousands of contacts. 
 
 * You may update the firmware to your radio by locating the **D878UV_V1.15_Official_release** folder you downloaded and extracted in the third step. Open the folder, and then open **A READ FIRST - Update Instructions** folder, and then open **Firmware Update Instructions.pdf** and follow the instructions to update your firmware.
+
+# Button Layout
+* P1 short press: Cycle through digital monitor settings (OFF/Current Time slot/Both Time slots)
+* P1 long press: Toggle scan mode on/off
+* P2 short press: Toggle between main and subchannels
+* P2 long press: Toggle subchannel display on/off
+* PF1 (below PTT switch) short press: Cycle through power settings (Low, Medium, High, Turbo)
+* PF1 long press: Toggle between VFO and memory mode
+* PF2 (below PF1): Analog monitor mode (as long as button is depressed)
+* PF3 (orange/blue* button) short press: Scan channel lockout (only works in scan mode)
+* PF3 long press: Toggle recorder on/off
