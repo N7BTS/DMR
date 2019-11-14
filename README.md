@@ -4,6 +4,17 @@ Modified from [@AG7GN](https://www.github.com/AG7GN)'s D-868UV codeplug for use 
 This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.15. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). It *should* be compatible with the D-868UV radio and the D-868UV CPS, except for the APRS features as long as you use the latest 868 CPS and firmware. However, I will not make a guarantee as I do not own a D-868UV. 
 
 # Change log
+### 11-10-19
+* Updated digital contact list
+* Fixed Parrot TG in BM Zones 
+* Reordered and renumbered zones
+* Deleted Whatcom Ham zone (duplicates of WECG zone)
+* Added BC repeaters zone
+* Deleted Analog Data zone
+* Reordered channels in BM zones
+* Activated APRS transmit after PTT in analog APRS zone
+* Fixed DMR APRS TG issues
+* Changed PTT tone to Motorola type
 ### 9-29-19
 * Updated digital contact list
 * Disabled auto startup channels
@@ -34,7 +45,7 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 
 # I just got a new Anytone D-878 radio... now what?
 * **Important:** Obtain a DMR ID by registering on [Radioid.net](https://radioid.net/register). You may do this before you get the radio.
-* Download the **<Date> AT-D878 WECG Template.rdt** file from this website. **AT-D868 users:** instead, download the <Date> AT-D878 WECG Template.dcf file. 
+* Download the **<Date> AT-D878 WECG Codeplug.rdt** file from this website. **AT-D868 users:** instead, download the <Date> AT-D878 WECG Template.dcf file. 
 * Download the CPS software. Scroll in the [Bridgecomm Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page) website and click  the **AT-D878UV CPS, Firmware, and Driver Update 1.15** link which will save as a zip file named **D878UV_V1.15_Official_release**. Extract all, and then run the **D878UV_Setup_1.15.exe** file inside the **D878UV V1.15CPS** folder. At the end of the installation, launch the **D878UV** program. This is the Codeplug Software (CPS).
 * In the CPS, click **File -> Open...** and then locate and double-click **<Date> AT-D878 WECG Template.rdt** (.dcf for 868 users).
 * On the left-hand side of the window, click the **+** next to **Digital** to drop down the list, and click **Radio ID List**. Double-click the **13153958** and when the pop-up appears, change the **13153958** to your DMR ID, and **ChangeMe** to your call sign. Click **Ok**.
