@@ -1,7 +1,9 @@
 # WECG DMR Codeplug for Anytone D-878UV
 Modified from [@AG7GN](https://www.github.com/AG7GN)'s D-868UV codeplug for use with the D-878 and added analog and digital APRS functionality. Codeplug contains the PNW repeater network frequencies/zones along with other various Brandmeister repeaters in Northwest Washington and the WECG frequency list for Whatcom County. 
 
-This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.15. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). It *should* be compatible with the D-868UV radio and the D-868UV CPS, except for the APRS features as long as you use the latest 868 CPS and firmware. However, I will not make a guarantee as I do not own a D-868UV. 
+This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.15. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). 
+
+**Anytone D-868 Users:** Steve, AG7GN, has compiled detailed instructions on how to use this 878 codeplug with the 868, while retaining your personal settings, by making use of the data conversion file. Check it out on his [README.md.](https://github.com/AG7GN/DMR/blob/master/README.md) 
 
 # Change log
 ### 11-10-19
