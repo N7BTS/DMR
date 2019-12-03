@@ -3,7 +3,7 @@ Modified from [@AG7GN](https://www.github.com/AG7GN)'s D-868UV codeplug for use 
 
 This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.15. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). 
 
-**Anytone D-868 Users:** Steve, AG7GN, has compiled detailed instructions on how to use this 878 codeplug with the 868, while retaining your personal settings, by making use of the data conversion file. Check it out on his [README.md.](https://github.com/AG7GN/DMR/blob/master/README.md) 
+**Anytone D-868 Users:** Steve, AG7GN, has compiled detailed instructions on how to use this 878 codeplug with the 868, while retaining your personal settings, by making use of the Data Conversion File (DCF). Check it out on his [README.md.](https://github.com/AG7GN/DMR/blob/master/README.md) 
 
 # Change log
 ### 11-10-19
