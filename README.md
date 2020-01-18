@@ -1,11 +1,28 @@
 # WECG DMR Codeplug for Anytone D-878UV
 Modified from [@AG7GN](https://www.github.com/AG7GN)'s D-868UV codeplug for use with the D-878 and added analog and digital APRS functionality. Codeplug contains the PNW repeater network frequencies/zones along with other various Brandmeister repeaters in Northwest Washington and the WECG frequency list for Whatcom County. 
 
-This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.15. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). 
+This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) version 1.16. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). 
 
 **Anytone D-868 Users:** Steve, AG7GN, has compiled detailed instructions on how to use this 878 codeplug with the 868, while retaining your personal settings, by making use of the Data Conversion File (DCF). Check it out on his [README.md.](https://github.com/AG7GN/DMR/blob/master/README.md) 
 
 # Change log
+### 1-17-20
+* Updated to 1.16 CPS
+* Removed Ferndale analog repeater from zone 1 & 12 (no longer on air)
+* Added an APRS direct channel for monitoring
+* Added an empty travel zone for users to easily drop TGs to when traveling
+* Alphabetized TG order in CPS
+* Removed Emcomm1 & Emcomm2 PNW TGs from codeplug
+* Removed PS1 and PS2 PNW TGs from codeplug
+* Added missing ValleyCamp 3100 & TAC310 channels
+* **---HOTSPOT USERS--- Important Change:** Changed single-slot frequencies to 430.425 and dual-slot frequencies to 430.450/439.450 in order to be compliant with WWARA suggestions
+* Added roaming zone and channels for BM network repeaters in WA/OR/ID
+* Added Whatcom County DMR users to TG list
+* Added Santa Barbara TG 31073 (request)
+* Updated scan lists to be more useful with slow scan rate. Now only dispatch channels for public service and frequently used repeaters for Whatcom area.
+* Added some SMS "Quick Texts"
+
+
 ### 11-10-19
 * Updated digital contact list
 * Fixed Parrot TG in BM Zones 
@@ -43,12 +60,13 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 * Added analog APRS functionality through the menus
 
 # Known Issues
+* If you use APRS and notice that your location as shown in aprs.fi is wrong (in Mongolia), the APRS settings in the radio got messed up and the radio is beaconing a fixed location. For unknown reasons, this happens sometimes after updating the codeplug despite following the instructions for setting up the CPS correctly for APRS. To fix: in the radio, press Menu->APRS->Upload Beacon->GPS Beacon. 
 * Some newer radios get a "Band Error" when trying to write this codeplug to the radio. Bridgecom has created a [video](https://www.youtube.com/watch?v=yj-AoN1ofGc) explaning this error and how to fix it. More information about the error is on their [878 Support Page](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page).
 
-# I just got a new Anytone D-878 radio... now what?
-* **Important:** Obtain a DMR ID by registering on [Radioid.net](https://radioid.net/register). You may do this before you get the radio.
+# Setup Instructions
+* **New to DMR? Important:** Obtain a DMR ID by registering on [Radioid.net](https://radioid.net/register). You may do this before you get the radio.
 * Download the **<Date> AT-D878 WECG Codeplug.rdt** file from this website. **AT-D868 users:** instead, download the <Date> AT-D878 WECG Template.dcf file. 
-* Download the CPS software. Scroll in the [Bridgecomm Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page) website and click  the **AT-D878UV CPS, Firmware, and Driver Update 1.15** link which will save as a zip file named **D878UV_V1.15_Official_release**. Extract all, and then run the **D878UV_Setup_1.15.exe** file inside the **D878UV V1.15CPS** folder. At the end of the installation, launch the **D878UV** program. This is the Codeplug Software (CPS).
+* Download the current codeplug software (CPS) version. Scroll in the [Bridgecomm Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page) website and click  the **AT-D878UV CPS, Firmware, and Driver Update 1.16** link which will save as a zip file named **D878UV_V1.16_Official_release**. Extract all, and then run the **D878UV_Setup_1.16.exe** file inside the **D878UV V1.16CPS** folder. At the end of the installation, launch the **D878UV** program. This is the Codeplug Software (CPS).
 * In the CPS, click **File -> Open...** and then locate and double-click **<Date> AT-D878 WECG Template.rdt** (.dcf for 868 users).
 * On the left-hand side of the window, click the **+** next to **Digital** to drop down the list, and click **Radio ID List**. Double-click the **13153958** and when the pop-up appears, change the **13153958** to your DMR ID, and **ChangeMe** to your call sign. Click **Ok**.
 * If you wish to enable APRS functionality, in the menu bar click **Tool -> Options** and then check **GPS** and **APRS**. Click **Ok**. Double-click **APRS** on the left-hand side of the window, and change **Your Callsign** from **CHANGE** to your callsign. You may also change your SSID in this menu, although -7 is standard for a HT. 
@@ -58,7 +76,7 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 * Set the Comm Port. Plug the radio in to the computer using the data cable, and turn on the radio. In the CPS menu bar, click **Set -> Set COM**. When the window pops up, select the correct comm port. If you don't know which port is correct, you can close the window, unplug the cable, and re-open **Set COM** to see which port disappeared. 
 * Upload to radio. In the menu bar, click **Program -> Write to radio**. Click **Ok** and then check both boxes **Digital Contact List** and **Other Data**. Click **Ok** and wait for the data to be written to the radio. Don't turn off or unplug the radio during this step. It may take several minutes, as the digital contact list contains tens of thousands of contacts. 
 
-* You may update the firmware to your radio by locating the **D878UV_V1.15_Official_release** folder you downloaded and extracted in the third step. Open the folder, and then open **A READ FIRST - Update Instructions** folder, and then open **Firmware Update Instructions.pdf** and follow the instructions to update your firmware.
+* You may update the firmware to your radio by locating the **D878UV_V1.16_Official_release** folder you downloaded and extracted in the third step. Open the folder, and then open **A READ FIRST - Update Instructions** folder, and then open **Firmware Update Instructions.pdf** and follow the instructions to update your firmware.
 
 # Button Layout
 * P1 short press: Cycle through digital monitor settings (OFF/Current Time slot/Both Time slots)
