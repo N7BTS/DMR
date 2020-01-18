@@ -16,7 +16,7 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 * Removed PS1 and PS2 PNW TGs from codeplug
 * Added missing ValleyCamp 3100 & TAC310 channels
 * **---HOTSPOT USERS--- Important Change:** Changed single-slot frequencies to 430.425 and dual-slot frequencies to 430.450/439.450 in order to be compliant with WWARA suggestions
-* Added roaming zone and channels for BM network repeaters in WA/OR/ID
+* Added roaming zone and channels for BM network repeaters in WA/ID
 * Added Whatcom County DMR users to TG list
 * Added Santa Barbara TG 31073 (request)
 * Updated scan lists to be more useful with slow scan rate. Now only dispatch channels for public service and frequently used repeaters for Whatcom area.
