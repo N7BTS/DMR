@@ -8,7 +8,7 @@ This codeplug was created using the Anytone D-878UV Codeplug Software (CPS) vers
 # Change log
 ### 1-17-20
 * Updated to 1.16 CPS
-* Removed Ferndale analog repeater from zone 1 & 12 (no longer on air)
+* Changed Ferndale to Sehome in Zone 1 
 * Added an APRS direct channel for monitoring
 * Added an empty travel zone for users to easily drop TGs to when traveling
 * Alphabetized TG order in CPS
