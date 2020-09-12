@@ -1,11 +1,30 @@
 # WECG DMR Codeplug for Anytone D-878UV
 Modified from [@AG7GN](https://www.github.com/AG7GN)'s D-868UV codeplug for use with the D-878 and added analog and digital APRS functionality. Codeplug contains the PNW repeater network frequencies/zones along with other various Brandmeister repeaters in Northwest Washington and the WECG frequency list for Whatcom County. 
 
-This codeplug was created using the Anytone D-878UV Customer Programming Software (CPS) version 1.16. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). 
+This codeplug was created using the Anytone D-878UV Customer Programming Software (CPS) version 1.20. It can be downloaded from [Bridgecom Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page). 
 
 **Anytone D-868 Users:** Steve, AG7GN, has compiled detailed instructions on how to use this 878 codeplug with the 868, while retaining your personal settings, by making use of the Data Conversion File (DCF). Check it out on his [README.md.](https://github.com/AG7GN/DMR/blob/master/README.md) 
 
 # Change log
+### 9-12-20
+* Updated to 1.20 CPS
+* Added new BM repeaters into zones: Lyman, Silverdale, Redmond, and Blyn
+* Reordered zone list
+* Fixed GMT offset to -8 instead of -7
+* Changed Person Call Hold Time to 10s to avoid "Missed Call" when using BM Parrot
+* Added function to display last caller callsign
+* Turned off priority channel in PS scan list
+* Fixed scanning issue where some channels were not linked to a scan list
+* Changed Time Out Timer to 120 seconds
+* Locked out TX on all PS channels
+* Removed Digital APRS Parrot and Digital APRS Local 2 channels and reallocated to Digital APRS Simplex channels (one each VHF and UHF). Enabled APRS RX and ranging capabilities for both channels
+* Removed Local 2 channels from BM zones. Local 2 TG is a PNW network TG, not BM
+* Enabled APRS RX and ranging capabilities in all DMR Simplex channels
+* Changed all DMR repeater channels to DMR Mode: Repeater and changed all DMR simplex channels to DMR Mode: Double Slot
+* In APRS options, changed destination callsign to APAT81 to tell the APRS network that the device is an AT-D878
+* Updated digital contact list
+
+
 ### 1-17-20
 * Updated to 1.16 CPS
 * Changed Ferndale to Sehome in Zone 1 
@@ -60,14 +79,14 @@ This codeplug was created using the Anytone D-878UV Customer Programming Softwar
 * Added analog APRS functionality through the menus
 
 # Known Issues
-* If you use APRS and notice that your location as shown in aprs.fi is wrong (in Mongolia), the APRS settings in the radio got messed up and the radio is beaconing a fixed location. For unknown reasons, this happens sometimes after updating the codeplug despite following the instructions for setting up the CPS correctly for APRS. To fix: in the radio, press Menu->APRS->Upload Beacon->GPS Beacon. 
-* Some newer radios get a "Band Error" when trying to write this codeplug to the radio. Bridgecom has created a [video](https://www.youtube.com/watch?v=yj-AoN1ofGc) explaning this error and how to fix it. More information about the error is on their [878 Support Page](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page).
+* If you use APRS and notice that your location as shown in aprs.fi is wrong (in Mongolia), the APRS settings in the radio got messed up and the radio is beaconing a fixed location. For unknown reasons, this happens sometimes after updating the codeplug despite following the instructions for setting up the CPS correctly for APRS. To fix: in the radio, press **Menu->APRS->Upload Beacon->GPS Beacon.**
+* Some newer radios get a "Band Error" when trying to write this codeplug to the radio due to some radios now being shipped in MODE 0010. This codeplug is written for a radio in MODE 0000. To change band mode, you can see instructions on the Bridgecom [878 FAQ Page](https://www.bridgecomsystems.com/pages/at-d878uv-faq).
 
 # Setup Instructions
 * **New to DMR? Important:** Obtain a DMR ID by registering on [Radioid.net](https://radioid.net/register). You may do this before you get the radio.
 * Download the **<Date> AT-D878 WECG Codeplug.rdt** file from this website. **AT-D868 users:** instead, download the <Date> AT-D878 WECG Template.dcf file. 
-* Download the current Customer Programming Software (CPS) version. Scroll in the [Bridgecomm Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page) website and click  the **AT-D878UV CPS, Firmware, and Driver Update 1.16** link which will save as a zip file named **D878UV_V1.16_Official_release**. Extract all, and then run the **D878UV_Setup_1.16.exe** file inside the **D878UV V1.16CPS** folder. At the end of the installation, launch the **D878UV** program. This is the Customer Programming Software (CPS).
-* In the CPS, click **File -> Open...** and then locate and double-click **<Date> AT-D878 WECG Template.rdt** (.dcf for 868 users).
+* Download the current Customer Programming Software (CPS) version. Scroll in the [Bridgecomm Systems](https://www.bridgecomsystems.com/pages/anytone-at-d878uv-support-page) website and click  the **AnyTone UV878 V1.20 CPS, Firmware, and Instructions Download** link which will save as a zip file named V1.20P-20200908T160851Z-001. Inside, you should a folder named V1.20P, and inside this folder you will find a zip file named **D878UV V1.20P official release 200908.zip**. Extract all, and then run the **D878UV_Setup_1.20P.exe** file inside the **D878UV V1.20P CPS** folder. At the end of the installation, launch the **D878UV** program. This is the Customer Programming Software (CPS).
+* In the CPS, click **File -> Open...** and then locate and double-click **<Date> AT-D878 WECG Codeplug.rdt** (.dcf for 868 users).
 * On the left-hand side of the window, click the **+** next to **Digital** to drop down the list, and click **Radio ID List**. Double-click the **13153958** and when the pop-up appears, change the **13153958** to your DMR ID, and **ChangeMe** to your call sign. Click **Ok**.
 * If you wish to enable APRS functionality, in the menu bar click **Tool -> Options** and then check **GPS** and **APRS**. Click **Ok**. Double-click **APRS** on the left-hand side of the window, and change **Your Callsign** from **CHANGE** to your callsign. You may also change your SSID in this menu, although -7 is standard for a HT. 
 **NOTE:** In this template, analog APRS is enabled by switching to the **Analog APRS** zone. While in this zone, each channel will beacon your GPS location to 144.39 MHz every 120 seconds. You will see a screen pop-up on the radio when the beacon data is being sent.  **_IMPORTANT: Only use the APRS zones when you wish to actively use APRS._** If you have no reason to be beaconing your position (i.e. sitting in your house monitoring all day), you may inadvertently be saturating the APRS frequency. However, the APRS zone may prove to be very useful when used as intended. For example, you may be monitoring the Mt Constitution VHF Repeater channel in the Analog APRS zone on the A side while monitoring the Lookout Mtn Repeater WASH 1 DMR talkgroup on the B side while hiking in the woods, and your GPS track will be transmitted to the APRS frequency in the background, digipeated, and then uploaded to the internet through iGates.
@@ -76,7 +95,11 @@ This codeplug was created using the Anytone D-878UV Customer Programming Softwar
 * Set the Comm Port. Plug the radio in to the computer using the data cable, and turn on the radio. In the CPS menu bar, click **Set -> Set COM**. When the window pops up, select the correct comm port. If you don't know which port is correct, you can close the window, unplug the cable, and re-open **Set COM** to see which port disappeared. 
 * Upload to radio. In the menu bar, click **Program -> Write to radio**. Click **Ok** and then check both boxes **Digital Contact List** and **Other Data**. Click **Ok** and wait for the data to be written to the radio. Don't turn off or unplug the radio during this step. It may take several minutes, as the digital contact list contains tens of thousands of contacts. 
 
-* You may update the firmware to your radio by locating the **D878UV_V1.16_Official_release** folder you downloaded and extracted in the third step. Open the folder, and then open **A READ FIRST - Update Instructions** folder, and then open **Firmware Update Instructions.pdf** and follow the instructions to update your firmware.
+* You may update the firmware to your radio by locating the **D878UV V1.20P official release 200908** folder you downloaded and extracted in the third step. Open the folder, and then open **A READ FIRST - Update Instructions** folder, and then open **Firmware Update Instructions.pdf** and follow the instructions to update your firmware.
+
+# Optional WECG Boot Image & Standby Backgrounds
+* To use the WECG logo as the boot image: Download the **Boot_Image_(WECG_S&R_Logo).bmp** file from this website. In the CPS, click **Tool -> Boot Image**. Click **Open Image** and located the image you just downloaded. Click **Write** and then **Ok** to write the boot image to the radio. Then, close the Boot Image dialog and double-click **Optional Setting** on the left hand side of the window and click **Power-on** tab. Select the **Power-on Interface** dropdown menu and click **Custom Picture**. Save your codeplug and write to the radio as shown in the **Setup Instructions** above.
+* To use the WECG logo as the standby background image: Download the **Standby_BK_Picture_(WECG_S&R_Logo).bmp** file from this website. In the CPS, click **Tool -> Standby BK Picture1**. Click **Open Image** and located the image you just downloaded. Click **Write** and then **Ok** to write the background image to the radio. Then, close the Standby BK Picture1 dialog and double-click **Optional Setting** on the left hand side of the window and click **Display** tab. Select the **Standby BK Picture** dropdown menu and click **Custom1**. Save your codeplug and write to the radio as shown in the **Setup Instructions** above.
 
 # Button Layout
 * P1 short press: Cycle through digital monitor settings (OFF/Current Time slot/Both Time slots)
